@@ -1,0 +1,15 @@
+.head{
+    text-align: center;
+    background-color: rgb(21, 241, 21);
+    color: brown;
+    text-transform: uppercase;
+    padding: 2%;
+    border-radius: 50%/350%;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.head:hover{
+    background-color: brown;
+    color: rgb(21, 241, 21);
+    transform: scale(0.5);
+}
