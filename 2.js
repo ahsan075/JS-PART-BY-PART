@@ -1,4 +1,4 @@
-console.log('PART 1')
+console.log('PART 2')
 console.log('')
 console.log('')
 console.log('')
@@ -171,3 +171,97 @@ for(var i=0;i<array.length;i++){
     total += array[i]
 }
 console.log(total)
+
+console.log('')
+console.log('                                             ARRAY Methods')
+var a=['A','S','N','A','H']
+console.log(a)
+a.pop()
+console.log('POP : '+a)
+a.push('K')
+console.log('PUSH : '+a)
+a.shift()
+console.log('SHIFT : '+a)
+a.unshift('S')
+console.log('UNSHIFT : '+a)
+
+
+var b=['S','H','A','K','I','L']
+var d=['A','U','S']
+console.log('CONCAT : '+a.concat(b,d))
+
+
+console.log('JOIN : '+a.join('-'))
+
+console.log('SLICE : '+a.slice(1,4))
+a.splice(2,0,'P','A')
+console.log('SPLICE : '+a)
+
+var l=Array.isArray(a)
+console.log('ISARRAY : '+l)
+
+console.log('INDEXOF : '+a.indexOf('A'))
+console.log('LAST INDEX OF : '+a.lastIndexOf('A'))
+
+console.log('INCLUDES : '+a.includes('N'))
+
+var ages=[15,28,19,22,14,13,17]
+function CheckAdult(age){
+    return age>=18
+}
+
+console.log('SOME : '+ages.some(CheckAdult))
+console.log('EVERY : '+ages.every(CheckAdult))
+console.log('FIND : '+ages.find(CheckAdult))
+console.log('FINDINDEX : '+ages.findIndex(CheckAdult))
+console.log('FILTER : '+ages.filter(CheckAdult))
+console.log('TOSTRING : '+ages.toString())
+console.log('VALUEOF (default) : '+a.valueOf())
+console.log('FILL : '+a.fill('GOOD'))
+var arr10=Array.from(d)
+console.log('FROM : '+arr10)
+
+
+console.log('')
+console.log('                                           SEARCH VALUE IN ARRAY')
+
+var arr=[4,7,8,6,5,1,3,2,9,24,15,78]
+var find=10
+var isFound=false
+for (var i=0; i<arr.length; i++){
+    if (arr[i]===find){
+        console.log('DATA FOUND '+i)
+        isFound=true
+        break;
+    }
+}
+if(!isFound){
+    console.log('DATA NOT FOUND')
+}
+
+
+console.log('')
+console.log('                                           MULTIDIMENSIONAL ARRAY')
+
+var arr=[[78,79,80,81],
+         [15,16,17,18],
+         [45,46,47,48]   
+        ]
+
+for(var i=0;i<arr.length;i++){
+    for (var j=0;j<arr[i].length;j++){
+        console.log('ELEMENT'+i+':'+arr[i][j])
+    }
+}
+
+
+console.log('')
+console.log('                                           REVERSE AN ARRAY')
+
+var arr=[1,2,3,4,5,6,7,8,9]
+for(var i=0;i<(arr.length/2);i++){
+    var temp=arr[i]
+    arr[i]=arr[arr.length-1-i]
+    arr[arr.length-1-i]=temp
+}
+console.log(arr)
