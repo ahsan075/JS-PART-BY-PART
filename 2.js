@@ -103,6 +103,21 @@ var str2=str.toString()
 console.log(str+num)
 console.log(str2+num)
 
+
+console.log('')
+console.log('                                            STRING LITERAL VS CONSTRUCTOR')
+
+//String Literal
+var str='Something'
+
+//String Constructor
+var Str=String('Something')
+
+var n=10
+var str=n+''
+console.log(typeof(str))
+
+
 console.log('')
 console.log('                                            STRING COMPARISON')
 
